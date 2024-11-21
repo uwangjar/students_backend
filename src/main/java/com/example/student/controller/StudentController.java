@@ -23,14 +23,14 @@ public class StudentController {
         iStudentService.createStudent(student);
         return ResponseEntity
                 .status(HttpStatus.CREATED)
-                .body(new ResponseDto("201", "Movie created successfully"));
+                .body(new ResponseDto("201", "Studen created successfully"));
     }
 
     @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping("/student")
     public ResponseEntity<List<Student>> fetchStudents() {
-        List<Student> customers = iStudentService.fetchMovies();
-        return ResponseEntity.status(HttpStatus.OK).body(customers);
+        List<Student> students = iStudentService.fetchMovies();
+        return ResponseEntity.status(HttpStatus.OK).body(students);
     }
 
     @CrossOrigin(origins = "http://localhost:3000")

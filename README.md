@@ -1,5 +1,5 @@
 # Student
- CRUD Spring Boot Rest API
+ CRUD, Rest API, Spring Boot, JPA and Docker
 
  Create docker image 
 

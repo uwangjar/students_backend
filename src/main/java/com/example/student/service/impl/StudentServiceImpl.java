@@ -35,7 +35,7 @@ public class StudentServiceImpl implements IStudentService {
         studentRepository.save(student);
 
     }
-    public List<Student> fetchMovies(){
+    public List<Student> fetchStudents(){
         return studentRepository.findAll();
     }
 
@@ -57,7 +57,6 @@ public class StudentServiceImpl implements IStudentService {
         // Closing the BufferedReader
         reader.close();
         studentRepository.saveAll(list);
-        // Returning the contents of the file as a string
 
     }
 
